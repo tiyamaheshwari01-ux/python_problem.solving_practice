@@ -1,5 +1,7 @@
-#using escape sequence character in string 
+s={}
+print(type(s))
+# the type will be defined as dictionary 
 
-letter = "Dear Harry,\n\tThis python course is nice.\n Thanks!"
-print(letter)
-#output looks cool
+a=set()
+print(type(a))
+# its an empty set 
