@@ -1,26 +1,48 @@
-#reate an empty dictionary. Allow 4 friends to enter their favorite language as value and use key as their names. Assume that the names are unique.
-dic={}
+# 6.
+"""Write a program to calculate the grade of a student from his marks from the following scheme:
+90 – 100 => Ex
+80 – 90 => A
+70 – 80 => B
+60 – 70 =>C
+50 – 60 => D
+<50 => F"""
 
-name=input("enter the name:")
-language=input("enter the lang:")
-dic.update({name:language})# we have used .update bcz of dictionary, in set and list -.append is used but in dictionaru it's .update
-#important dictionary = update not append 
-name=input("enter the name:")
-language=input("enter the lang:")
-dic.update({name:language})
+m1=int(input("enter marks of subject 1:"))
+m2=int(input("enter marks of subject 2:"))
+m3=int(input("enter marks of subject 3:"))
 
-name=input("enter the name:")
-language=input("enter the lang:")
-dic.update({name:language})
 
-name=input("enter the name:")
-language=input("enter the lang:")
-dic.update({name:language})
+total_percentage=(100*(m1+m2+m3)/300)
+print(total_percentage)
 
-name=input("enter the name:")
-language=input("enter the lang:")
-dic.update({name:language})
+"""if total_percentage is 90-100:
+    print("excellent")
+if total_percentage is 80-90:
+    print("best")
 
-print(dic)
-# in output if you will enter the same name twic then you will name enter later means that is the most updated name since value withinthe dictionary 
-# can be diferrent for the same key but two same keys cant exist at the same time.
+if total_percentage is 70-80:
+    print("good")
+if total_percentage is 60-70:
+    print("okay")
+else:
+    print("better try next time,fail")"""
+#in this python was only running the part of else statemenets that bhi bcz if was present then only else can run
+# why it was wrong??
+#since pythin don't take this as a range 90-100
+# it takes as a calculation returning ans -10
+# in ever case 
+# correct code would look like 
+if 90<=  total_percentage<=100:
+    print("excellent")
+elif 80<=  total_percentage<=90:
+    print("grade a")
+elif 70<=  total_percentage<=80:
+    print("grade b")
+elif 60<=  total_percentage<=70:
+    print("grade c")
+elif 50<= total_percentage<=60:
+    print("fail")
+    
+
+
+    

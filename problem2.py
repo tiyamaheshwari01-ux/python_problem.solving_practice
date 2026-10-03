@@ -1,58 +1,22 @@
-"""s=set()
-n1=int (input("enter the first number:"))
-set.add(int(n1))
+m1=int(input("enter the marks of first subject"))
+m2=int(input("enter the marks of first subject"))
+m3=int(input("enter the marks of first subject"))
+ # at first you need to find out the total percentage so that at least the siystem and compare 
+ # the system wont solve the percentage khud s 
+ # you need to put in formula with in the code 
+ 
+total_percentage=(((m1+m2+m3)*100)/300)#formula
+#we can also remove the zero writing it as (((m1+m2+m3))/3) to optimise the code and better mathematics
 
-n2=int (input("enter the first number:"))
-set.add(int(n2))
 
-n3=int (input("enter the first number:"))
-set.add(int(n3))
+# here you can't write it as m1+m2+m3/300(this actually mean is m3/300)*
+#better use braceket as used niow it will give you perfect output 
 
-n4=int (input("enter the first number:"))
-set.add(int(n4))
 
-n5=int (input("enter the first number:"))
-set.add(int(n5))
+if total_percentage*100>=40 and m1>=33 and m2>=33 and m3>=33:
+    print("you are pass",total_percentage)
+else:
+    print("try again next year",total_percentage)
 
-n6=int (input("enter the first number:"))
-set.add(int(n6))
+    
 
-n7=int (input("enter the first number:"))
-set.add(int(n7))
-
-n8=int (input("enter the first number:"))
-set.add(int(n8))
-print(set)"""
-# the point is that you cant  take set.add(set-is a in build function in the python so you cant assign it as a variable )
-# as i mentioned before 
-s = set()
-
-n1 = int(input("Enter number 1: "))
-s.add(n1)
-
-n2 = int(input("Enter number 2: "))
-s.add(n2)
-
-n3 = int(input("Enter number 3: "))
-s.add(n3)
-
-n4 = int(input("Enter number 4: "))
-s.add(n4)
-
-n5 = int(input("Enter number 5: "))
-s.add(n5)
-
-n6 = int(input("Enter number 6: "))
-s.add(n6)
-
-n7 = int(input("Enter number 7: "))
-s.add(n7)
-
-n8 = int(input("Enter number 8: "))
-s.add(n8)
-
-print("Final set is:", s)
-# the uppar wala code also wrkds just that you need to assign set=set()
-# this hwere we are creating a aempty set 
-#then the code will run how i created a emtry list was e=set()
-#and i didn't assgned e as the e.add(int(n1))

@@ -1,10 +1,25 @@
-a=input("enter your name:")
-print("good afternoon",a)
-# this can also be done with help of f string in the given way 
+#Write a program to find the greatest of four numbers entered by the user.
+a=int(input("enter the number:"))
+b=int(input("enter the number:"))
+c=int(input("enter the number:"))
+d=int(input("enter the number:"))
+"""if a>b:
+    print(a)
+elif b>c:
+    print(b)
+elif c>d:
+    print(c)
+else:
+    print(d)"""# this wont work every single time bcz you are not compaining every single value with out its just 
+#first to second ,second to third ,third to fourth, foruth 
 
-name=input("enter the name:")
-print(f"good everning",name)
-#though you need to put name in curly bracket and f before the string to make it work
-# like###     {name}   ####
-# here as in using f string requires the name to be in curly bracket and f before the string to make it work
-#here i might have put f in this but this is running normally without the use of f string .
+# but to create you need to compare every single value with one another so that we get the correct match 
+if(a>b and a>c and a>d):
+    print("gretest number",a)
+elif(b>a and b>c and b>d):
+    print("gretest number",b)
+elif(c>a and c>b and c>d):
+    print("gretest number",b)
+elif(d>a and d>b and d>c):
+    print("gretest number",d)
+#works
