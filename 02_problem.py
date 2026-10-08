@@ -1,6 +1,8 @@
-#Write a program to greet all the person names stored in a list ‘l’ and which starts with S.
-l=["shashwat","sara","tanishka","sushi","shona"]
-for i in l:
-    if (i.startswith("s")):# we a task is like us condition us if else elif statements too 
-        print(f"good morning {i}")
+# for for celcius to degree conversion
+# c=5*(f-32)/9
+def f_to_c(f):# you only put on the variable what you are giving the use input 
+    return 5*(f-32)/9
+    f= int(input("enter temprature in farehite:"))
+    print(f_to_c(f))
+    
 
